@@ -13,7 +13,7 @@ export default class Airport {
   }
 
   // Overrides the toStringTag and returns the airport code..
-  toString() {
+  get [Symbol.toStringTag]() {
     return this._code;
   }
 }

@@ -1,5 +1,5 @@
 /**
- * Function retrieves location from a list of students.
+ * Function retrieves ids from a list of students.
  * @param {{
 *   id: Number,
 *   firstName: String,
@@ -8,9 +8,9 @@
 * @author SantosAndrewz <https://github.com/SantosAndrewz/>
 * @returns
 */
-export default function getListStudentsByLocation(students) {
+export default function getListStudentsIdaSum(students) {
  if (students instanceof Array) {
-   return students.map((student) => student.location === city);
+   return students.reduce((sum, student) => sum + student.id, 0);
  }
- return [];
+ return 0;
 }

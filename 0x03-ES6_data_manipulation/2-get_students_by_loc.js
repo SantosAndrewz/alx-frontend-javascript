@@ -8,9 +8,9 @@
 * @author SantosAndrewz <https://github.com/SantosAndrewz/>
 * @returns
 */
-export default function getListStudentsByLocation(students) {
- if (students instanceof Array) {
-   return students.map((student) => student.location === city);
- }
- return [];
+export default function getStudentsByLocation(students, city) {
+  if (students instanceof Array) {
+    return students.filter((student) => student.location === city);
+  }
+  return [];
 }

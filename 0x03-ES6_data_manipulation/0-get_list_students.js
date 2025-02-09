@@ -1,5 +1,5 @@
 /**
- * Function retrieves a list of students.
+ * Function retrieves a list of students
  * @author SantosAndrewz <https://github.com/SantosAndrewz/>
  * @returns: {{ id: Number, firstName: String, location: String}[]}
 */
